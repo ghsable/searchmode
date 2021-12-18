@@ -20,7 +20,6 @@ const json = {
 };
 
 window.addEventListener('keydown', event => {
-
   if (event.isComposing || event.defaultPrevented || !event.isTrusted) {
     return;
   }

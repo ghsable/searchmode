@@ -5,41 +5,41 @@
 */
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: rgb(245, 249, 247);
+  background-color: rgb(245, 249, 247);
 }
 
 #search-form {
-    display: flex;
-    gap: 5px;
-    justify-content: safe center;
-    margin-top: 200px;
-    height: 70px;
+  display: flex;
+  gap: 5px;
+  justify-content: safe center;
+  margin-top: 200px;
+  height: 70px;
 }
 
 #search-form #search-input {
-    font-size: 130%;
-    padding-left: 15px;
-    padding-right: 15px;
+  font-size: 130%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #search-form #search-select {
-    width: 140px;
-    font-size: 110%;
-    padding-left: 1px;
+  width: 140px;
+  font-size: 110%;
+  padding-left: 1px;
 }
 
 #search-form #search-input:focus,
 #search-form #search-select:focus {
-    outline: green solid 3px;
-    border-radius: 2rem;
+  outline: green solid 3px;
+  border-radius: 2rem;
 }
 
 #search-form #search-input:hover,
 #search-form #search-select:hover {
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
