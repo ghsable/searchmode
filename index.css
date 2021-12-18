@@ -16,8 +16,8 @@ body {
 #search-form {
   display: flex;
   justify-content: safe center;
-  gap: 4px;
-  margin-top: 200px;
+  gap: 5px;
+  margin-top: 150px;
   height: 70px;
 }
 
