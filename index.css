@@ -18,6 +18,8 @@ body {
   justify-content: safe center;
   gap: 5px;
   margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
   height: 70px;
 }
 
