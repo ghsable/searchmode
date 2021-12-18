@@ -1,0 +1,39 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>searchmode</title>
+<meta charset="utf-8">
+<meta name="description" content="searchmode is a switchable search engine.">
+<meta name="author" content="Copyright (C) 2021 suna All Rights Reserved.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index.css">
+<link rel="icon" type="image/png" href="https://github.com/ghsable/searchmode/blob/main/.index/images/icon-65.png?raw=true">
+</head>
+
+<body>
+<form id="search-form" onsubmit="return false;">
+  <input id="search-input" autocomplete="off" autofocus maxlength="60" minlength="1" placeholder=" ... φ(．．)" size="60" type="text" value="" tabindex="1">
+  <select id="search-select" autocomplete="on" tabindex="2">
+    <option>🕵🏿</option>
+    <option>Yahoo!</option>
+    <option>Bing</option>
+    <option>Wikipedia</option>
+    <option>DuckDuckGo</option>
+    <option>Google</option>
+    <option selected>Ecosia</option>
+    <option>YouTube</option>
+    <option>Twitter</option>
+    <option>Amazon</option>
+    <option>Netflix</option>
+    <option>Prime Video</option>
+    <option>Translate</option>
+  </select>
+</form>
+
+<script src="./index.js"></script>
+</body>
+</html>
