@@ -7,7 +7,7 @@
 | Command | Shortcut | from |
 | :--- | :--- | :--- |
 | Focus Select Field or Input Field | `Tab` | `<input>`, `<select>` |
-| Switch Search Engine | `Alt` + `↑` or `↑`<br>`Alt` + `↓` or `↓` | `<select>` |
+| Switch Search Engine | `Alt` + `↑` or `↑` or `←`<br>`Alt` + `↓` or `↓` or `→` | `<select>` |
 | Open Search in Current Tab | `Enter` | `<input>`, `<select>` |
 | Open Search in New Foreground Tab | `Shift` + `Enter` | `<input>`, `<select>` |
 

@@ -14,6 +14,7 @@ const json = {
     "YouTube": "https://www.youtube.com/results?search_query=",
     "Twitter": "https://twitter.com/search?q=",
     "Amazon": "https://www.amazon.co.jp/s?k=",
+    "Filmarks": "https://filmarks.com/search/movies?q=",
     "Netflix": "https://www.netflix.com/search?q=",
     "Prime Video": "https://www.amazon.co.jp/s?i=instant-video&k=",
     "Translate": "https://translate.google.com/?source=osdd#auto|auto|"
