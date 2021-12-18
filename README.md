@@ -14,5 +14,8 @@
 ## ...!!XD
 * ([searchmode](https://ghsable.github.io/searchmode/) + [vimode](https://ghsable.github.io/vimode/)) + [mousemode](https://crates.io/crates/mousemode) = `...!!XD`
 
+## Validation
+[![Valid CSS!](http://jigsaw.w3.org/css-validator/images/vcss)](https://jigsaw.w3.org/css-validator/)
+
 ## License
 * [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
