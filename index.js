@@ -38,8 +38,8 @@ window.addEventListener('keydown', event => {
   if (event.code === 'Enter') {
     event.preventDefault();
 
-    const searchSelectValue = document.getElementById('search-select').value;
-    const searchInputValue = document.getElementById('search-input').value;
+    const searchSelectValue = document.getElementById('search-select')['value'];
+    const searchInputValue = document.getElementById('search-input')['value'];
 
     if (json[searchSelectValue] === undefined || json[searchSelectValue] === null ||
        searchInputValue.length < 1) {
