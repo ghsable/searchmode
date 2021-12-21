@@ -42,7 +42,7 @@ window.addEventListener('keydown', event => {
     const searchInputValue = document.getElementById('search-input')['value'];
 
     if (json[searchSelectValue] === undefined || json[searchSelectValue] === null ||
-       searchInputValue.length < 1) {
+       searchInputValue.length < 1 || searchInputValue.length > 80) {
         return;
     }
 
