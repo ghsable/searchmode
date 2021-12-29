@@ -8,6 +8,7 @@ const json = {
     "Yahoo!": "https://search.yahoo.co.jp/search?p=",
     "Bing": "https://www.bing.com/search?q=",
     "Wikipedia": "https://ja.wikipedia.org/wiki/",
+    "Brave": "https://search.brave.com/search?q=",
     "DuckDuckGo": "https://duckduckgo.com/?q=",
     "Google": "https://www.google.com/search?q=",
     "Ecosia": "https://www.ecosia.org/search?q=",
