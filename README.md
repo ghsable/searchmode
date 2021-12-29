@@ -3,6 +3,9 @@
 
 ![Screenshot.png](https://raw.githubusercontent.com/ghsable/searchmode/main/.readme/images/Screenshot.png)
 
+## Demo
+[![demo_searchmode.gif](https://raw.githubusercontent.com/ghsable/searchmode/main/.readme/images/demo_searchmode.gif)](https://raw.githubusercontent.com/ghsable/searchmode/main/.readme/images/demo_searchmode.mp4)
+
 ## Keyboard shortcuts
 | Command | Shortcut | from |
 | :--- | :--- | :--- |
