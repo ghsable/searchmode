@@ -1,7 +1,7 @@
 # searchmode
 [searchmode](https://ghsable.github.io/searchmode/) is a switchable search engine.
 
-![Screenshot.png](https://raw.githubusercontent.com/ghsable/searchmode/main/.index/images/Screenshot.png)
+![Screenshot.png](https://raw.githubusercontent.com/ghsable/searchmode/main/.readme/images/Screenshot.png)
 
 ## Keyboard shortcuts
 | Command | Shortcut | from |
