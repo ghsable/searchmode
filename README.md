@@ -15,7 +15,7 @@
 | Open Search in New Foreground Tab | `Shift` + `Enter` | `<input>`, `<select>` |
 
 ## ...!!XD
-* ([searchmode](https://ghsable.github.io/searchmode/) + [vimode](https://ghsable.github.io/vimode/)) + [mousemode](https://crates.io/crates/mousemode) = `...!!XD`
+* ([searchmode](https://github.com/ghsable/searchmode) + [vimode](https://ghsable.github.io/vimode/)) + [mousemode](https://crates.io/crates/mousemode) = `...!!XD`
 
 ## Validation
 [![Valid CSS!](http://jigsaw.w3.org/css-validator/images/vcss)](https://jigsaw.w3.org/css-validator/)
