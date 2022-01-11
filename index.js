@@ -5,7 +5,7 @@
 */
 
 const json = {
-    "Yahoo!": "https://search.yahoo.co.jp/search?p=",
+    "Yahoo!": "https://search.yahoo.com/search?p=",
     "Bing": "https://www.bing.com/search?q=",
     "Wikipedia": "https://ja.wikipedia.org/wiki/",
     "Brave": "https://search.brave.com/search?q=",
