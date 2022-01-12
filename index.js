@@ -14,10 +14,10 @@ const json = {
     "Ecosia": "https://www.ecosia.org/search?q=",
     "YouTube": "https://www.youtube.com/results?search_query=",
     "Twitter": "https://twitter.com/search?q=",
-    "Amazon": "https://www.amazon.co.jp/s?k=",
+    "Amazon": "https://www.amazon.com/s?k=",
     "TMDB": "https://www.themoviedb.org/search?query=",
     "Netflix": "https://www.netflix.com/search?q=",
-    "Prime Video": "https://www.amazon.co.jp/s?i=instant-video&k=",
+    "Prime Video": "https://www.amazon.com/s?i=instant-video&k=",
     "Translate": "https://translate.google.com/?source=osdd#auto|auto|"
 };
 
