@@ -49,7 +49,6 @@ window.addEventListener('keydown', event => {
 
     const url = new URL(json[searchSelectValue] + searchInputValue);
 
-    if (event.shiftKey) { window.open(url, '_blank');  }
-    else                { window.location.assign(url); }
+    event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
   }
 }, true);
