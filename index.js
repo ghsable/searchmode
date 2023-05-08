@@ -22,6 +22,9 @@ const searchEngines = {
 };
 
 function handleSearch(event) {
+  const inputEl = document.querySelector('#search-input');
+  const selectEl = document.querySelector('#search-select');
+
   if (event.isComposing || event.defaultPrevented || !event.isTrusted) {
     return;
   }
@@ -29,18 +32,18 @@ function handleSearch(event) {
   if (event.code === 'Tab') {
     event.preventDefault();
 
-    if (document.activeElement.id === 'search-input') {
-      document.getElementById('search-select').focus();
+    if (document.activeElement === inputEl) {
+      selectEl.focus();
     } else {
-      document.getElementById('search-input').focus();
+      inputEl.focus()
     }
   }
 
   if (event.code === 'Enter') {
     event.preventDefault();
 
-    const searchSelectValue = document.getElementById('search-select')['value'];
-    const searchInputValue = document.getElementById('search-input')['value'];
+    const searchSelectValue = selectEl.value;
+    const searchInputValue = inputEl.value;
 
     if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
       return;
