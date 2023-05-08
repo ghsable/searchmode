@@ -39,10 +39,7 @@ function handleSearch(event) {
     if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
       return;
     }
-
-    const baseUrl = searchEngines[searchSelectValue];
-    const url = new URL(baseUrl + encodeURIComponent(searchInputValue));
-
+    const url = createSearchUrl(searchSelectValue, searchInputValue);
     event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
   }
 }
@@ -65,6 +62,12 @@ function toggleFocus(inputEl, selectEl) {
   } else {
     inputEl.focus();
   }
+}
+
+function createSearchUrl(searchSelectValue, searchInputValue) {
+  const baseUrl = searchEngines[searchSelectValue];
+  const url = new URL(baseUrl + encodeURIComponent(searchInputValue));
+  return url;
 }
 
 window.addEventListener('keydown', handleSearch, true);
