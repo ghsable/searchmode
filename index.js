@@ -6,21 +6,21 @@
 
 const {selectEl, inputEl} = getElements();
 const searchEngines = {
-    "🕵": "",
-    "Yahoo!": "https://search.yahoo.com/search?p=",
-    "Bing": "https://www.bing.com/search?q=",
-    "Wikipedia": "https://wikipedia.org/wiki/",
-    "Brave": "https://search.brave.com/search?q=",
-    "DuckDuckGo": "https://duckduckgo.com/?q=",
-    "Google": "https://www.google.com/search?q=",
-    "Ecosia": "https://www.ecosia.org/search?q=",
-    "YouTube": "https://www.youtube.com/results?search_query=",
-    "Twitter": "https://twitter.com/search?q=",
-    "Amazon": "https://www.amazon.com/s?k=",
-    "TMDB": "https://www.themoviedb.org/search?query=",
-    "Netflix": "https://www.netflix.com/search?q=",
-    "Prime Video": "https://www.amazon.com/s?i=instant-video&k=",
-    "Translate": "https://translate.google.com/?source=osdd#auto|auto|"
+  "🕵": "",
+  "Yahoo!": "https://search.yahoo.com/search?p=",
+  "Bing": "https://www.bing.com/search?q=",
+  "Wikipedia": "https://wikipedia.org/wiki/",
+  "Brave": "https://search.brave.com/search?q=",
+  "DuckDuckGo": "https://duckduckgo.com/?q=",
+  "Google": "https://www.google.com/search?q=",
+  "Ecosia": "https://www.ecosia.org/search?q=",
+  "YouTube": "https://www.youtube.com/results?search_query=",
+  "Twitter": "https://twitter.com/search?q=",
+  "Amazon": "https://www.amazon.com/s?k=",
+  "TMDB": "https://www.themoviedb.org/search?query=",
+  "Netflix": "https://www.netflix.com/search?q=",
+  "Prime Video": "https://www.amazon.com/s?i=instant-video&k=",
+  "Translate": "https://translate.google.com/?source=osdd#auto|auto|"
 };
 
 function createSearchEngineOptions(searchEngines, selected) {
