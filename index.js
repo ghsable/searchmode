@@ -5,6 +5,7 @@
 */
 
 const searchEngines = {
+    "🕵": "",
     "Yahoo!": "https://search.yahoo.com/search?p=",
     "Bing": "https://www.bing.com/search?q=",
     "Wikipedia": "https://wikipedia.org/wiki/",
@@ -20,6 +21,20 @@ const searchEngines = {
     "Prime Video": "https://www.amazon.com/s?i=instant-video&k=",
     "Translate": "https://translate.google.com/?source=osdd#auto|auto|"
 };
+
+function createSearchEngineOptions(searchEngines, selected) {
+  const selectEl = document.querySelector('#search-select');
+
+  for (const engine in searchEngines) {
+    const optionEl = document.createElement('option');
+    optionEl.value = engine;
+    optionEl.textContent = engine;
+    if (engine === selected) {
+      optionEl.selected = true;
+    }
+    selectEl.appendChild(optionEl);
+  }
+}
 
 function handleSearch(event) {
   if (event.isComposing || event.defaultPrevented || !event.isTrusted) {
@@ -73,5 +88,7 @@ function createSearchUrl(searchSelectValue, searchInputValue) {
   const searchUrl = new URL(baseUrl + encodeURIComponent(searchInputValue));
   return searchUrl;
 }
+
+createSearchEngineOptions(searchEngines, 'Ecosia');
 
 window.addEventListener('keydown', handleSearch, true);
