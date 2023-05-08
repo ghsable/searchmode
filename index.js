@@ -46,7 +46,6 @@ window.addEventListener('keydown', event => {
       return;
     }
 
-
     const url = new URL(searchEngines[searchSelectValue] + searchInputValue);
 
     event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
