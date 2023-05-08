@@ -42,10 +42,10 @@ window.addEventListener('keydown', event => {
     const searchSelectValue = document.getElementById('search-select')['value'];
     const searchInputValue = document.getElementById('search-input')['value'];
 
-    if (searchEngines[searchSelectValue] === undefined || searchEngines[searchSelectValue] === null ||
-       searchInputValue.length < 1 || searchInputValue.length > 80) {
+    if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
         return;
     }
+
 
     const url = new URL(searchEngines[searchSelectValue] + searchInputValue);
 
