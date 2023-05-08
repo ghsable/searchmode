@@ -39,8 +39,8 @@ function handleSearch(event) {
     if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
       return;
     }
-    const url = createSearchUrl(searchSelectValue, searchInputValue);
-    event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
+    const searchUrl = createSearchUrl(searchSelectValue, searchInputValue);
+    event.shiftKey ? window.open(searchUrl, '_blank') : window.location.assign(searchUrl);
   }
 }
 
@@ -66,8 +66,8 @@ function toggleFocus(inputEl, selectEl) {
 
 function createSearchUrl(searchSelectValue, searchInputValue) {
   const baseUrl = searchEngines[searchSelectValue];
-  const url = new URL(baseUrl + encodeURIComponent(searchInputValue));
-  return url;
+  const searchUrl = new URL(baseUrl + encodeURIComponent(searchInputValue));
+  return searchUrl;
 }
 
 window.addEventListener('keydown', handleSearch, true);
