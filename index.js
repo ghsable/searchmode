@@ -55,7 +55,7 @@ function getElements() {
 
 function getSearchInputValues(selectEl, inputEl) {
   const searchSelectValue = selectEl.value;
-  const searchInputValue = inputEl.value;
+  const searchInputValue = inputEl.value.trim();
   return {searchSelectValue, searchInputValue};
 }
 
