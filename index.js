@@ -30,12 +30,7 @@ function handleSearch(event) {
 
   if (event.code === 'Tab') {
     event.preventDefault();
-
-    if (document.activeElement === inputEl) {
-      selectEl.focus();
-    } else {
-      inputEl.focus()
-    }
+    toggleFocus(inputEl, selectEl);
   }
 
   if (event.code === 'Enter') {
@@ -59,6 +54,14 @@ function getElements() {
   const selectEl = document.querySelector('#search-select');
   const inputEl = document.querySelector('#search-input');
   return {selectEl, inputEl};
+}
+
+function toggleFocus(inputEl, selectEl) {
+  if (document.activeElement === inputEl) {
+    selectEl.focus();
+  } else {
+    inputEl.focus();
+  }
 }
 
 window.addEventListener('keydown', handleSearch, true);
