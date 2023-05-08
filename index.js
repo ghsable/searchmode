@@ -4,7 +4,7 @@
    - You can obtain one at http://mozilla.org/MPL/2.0/.
 */
 
-const json = {
+const searchEngines = {
     "Yahoo!": "https://search.yahoo.com/search?p=",
     "Bing": "https://www.bing.com/search?q=",
     "Wikipedia": "https://wikipedia.org/wiki/",
@@ -42,12 +42,12 @@ window.addEventListener('keydown', event => {
     const searchSelectValue = document.getElementById('search-select')['value'];
     const searchInputValue = document.getElementById('search-input')['value'];
 
-    if (json[searchSelectValue] === undefined || json[searchSelectValue] === null ||
+    if (searchEngines[searchSelectValue] === undefined || searchEngines[searchSelectValue] === null ||
        searchInputValue.length < 1 || searchInputValue.length > 80) {
         return;
     }
 
-    const url = new URL(json[searchSelectValue] + searchInputValue);
+    const url = new URL(searchEngines[searchSelectValue] + searchInputValue);
 
     event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
   }
