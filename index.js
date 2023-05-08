@@ -48,7 +48,7 @@ function handleSearch(event) {
   if (event.code === 'Enter') {
     event.preventDefault();
     const {searchSelectValue, searchInputValue} = getSearchInputValues(selectEl, inputEl);
-    if (!searchEngines[searchSelectValue] || !validateInput(searchInputValue)) {
+    if (!searchEngines[searchSelectValue] || !isValidInput(searchInputValue)) {
       return;
     }
     const searchUrl = createSearchUrl(searchSelectValue, searchInputValue);
@@ -68,7 +68,7 @@ function getSearchInputValues(selectEl, inputEl) {
   return {searchSelectValue, searchInputValue};
 }
 
-function validateInput(inputValue) {
+function isValidInput(inputValue) {
   return inputValue && inputValue.length <= 80;
 }
 
