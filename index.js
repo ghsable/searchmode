@@ -46,7 +46,8 @@ function handleSearch(event) {
       return;
     }
 
-    const url = new URL(searchEngines[searchSelectValue] + searchInputValue);
+    const baseUrl = searchEngines[searchSelectValue];
+    const url = new URL(baseUrl + searchInputValue);
 
     event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
   }
