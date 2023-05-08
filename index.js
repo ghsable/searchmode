@@ -6,7 +6,7 @@
 
 const {selectEl, inputEl} = getElements();
 const searchEngines = {
-  "🕵": "",
+  "🕵🏿": "",
   "Yahoo!": "https://search.yahoo.com/search?p=",
   "Bing": "https://www.bing.com/search?q=",
   "Wikipedia": "https://wikipedia.org/wiki/",
