@@ -21,7 +21,7 @@ const searchEngines = {
     "Translate": "https://translate.google.com/?source=osdd#auto|auto|"
 };
 
-window.addEventListener('keydown', event => {
+function handleSearch(event) {
   if (event.isComposing || event.defaultPrevented || !event.isTrusted) {
     return;
   }
@@ -50,4 +50,6 @@ window.addEventListener('keydown', event => {
 
     event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
   }
-}, true);
+}
+
+window.addEventListener('keydown', handleSearch, true);
