@@ -22,12 +22,11 @@ const searchEngines = {
 };
 
 function handleSearch(event) {
-  const inputEl = document.querySelector('#search-input');
-  const selectEl = document.querySelector('#search-select');
-
   if (event.isComposing || event.defaultPrevented || !event.isTrusted) {
     return;
   }
+
+  const {selectEl, inputEl} = getElements();
 
   if (event.code === 'Tab') {
     event.preventDefault();
@@ -54,6 +53,12 @@ function handleSearch(event) {
 
     event.shiftKey ? window.open(url, '_blank') : window.location.assign(url);
   }
+}
+
+function getElements() {
+  const selectEl = document.querySelector('#search-select');
+  const inputEl = document.querySelector('#search-input');
+  return {selectEl, inputEl};
 }
 
 window.addEventListener('keydown', handleSearch, true);
