@@ -35,10 +35,7 @@ function handleSearch(event) {
 
   if (event.code === 'Enter') {
     event.preventDefault();
-
-    const searchSelectValue = selectEl.value;
-    const searchInputValue = inputEl.value;
-
+    const {searchSelectValue, searchInputValue} = getSearchInputValues(selectEl, inputEl);
     if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
       return;
     }
@@ -54,6 +51,12 @@ function getElements() {
   const selectEl = document.querySelector('#search-select');
   const inputEl = document.querySelector('#search-input');
   return {selectEl, inputEl};
+}
+
+function getSearchInputValues(selectEl, inputEl) {
+  const searchSelectValue = selectEl.value;
+  const searchInputValue = inputEl.value;
+  return {searchSelectValue, searchInputValue};
 }
 
 function toggleFocus(inputEl, selectEl) {
