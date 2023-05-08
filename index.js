@@ -4,6 +4,7 @@
    - You can obtain one at http://mozilla.org/MPL/2.0/.
 */
 
+const {selectEl, inputEl} = getElements();
 const searchEngines = {
     "🕵": "",
     "Yahoo!": "https://search.yahoo.com/search?p=",
@@ -23,8 +24,6 @@ const searchEngines = {
 };
 
 function createSearchEngineOptions(searchEngines, selected) {
-  const selectEl = document.querySelector('#search-select');
-
   for (const engine in searchEngines) {
     const optionEl = document.createElement('option');
     optionEl.value = engine;
@@ -40,8 +39,6 @@ function handleSearch(event) {
   if (event.isComposing || event.defaultPrevented || !event.isTrusted) {
     return;
   }
-
-  const {selectEl, inputEl} = getElements();
 
   if (event.code === 'Tab') {
     event.preventDefault();
