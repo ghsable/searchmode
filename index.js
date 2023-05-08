@@ -36,7 +36,7 @@ function handleSearch(event) {
   if (event.code === 'Enter') {
     event.preventDefault();
     const {searchSelectValue, searchInputValue} = getSearchInputValues(selectEl, inputEl);
-    if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
+    if (!searchEngines[searchSelectValue] || !validateInput(searchInputValue)) {
       return;
     }
     const searchUrl = createSearchUrl(searchSelectValue, searchInputValue);
@@ -54,6 +54,10 @@ function getSearchInputValues(selectEl, inputEl) {
   const searchSelectValue = selectEl.value;
   const searchInputValue = inputEl.value.trim();
   return {searchSelectValue, searchInputValue};
+}
+
+function validateInput(inputValue) {
+  return inputValue && inputValue.length <= 80;
 }
 
 function toggleFocus(inputEl, selectEl) {
