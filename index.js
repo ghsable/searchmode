@@ -43,7 +43,7 @@ window.addEventListener('keydown', event => {
     const searchInputValue = document.getElementById('search-input')['value'];
 
     if (!searchEngines[searchSelectValue] || searchInputValue.length < 1 || searchInputValue.length > 80) {
-        return;
+      return;
     }
 
 
