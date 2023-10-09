@@ -86,6 +86,6 @@ function createSearchUrl(searchSelectValue, searchInputValue) {
   return searchUrl;
 }
 
-createSearchEngineOptions(searchEngines, 'Ecosia');
+createSearchEngineOptions(searchEngines, 'Google');
 
 window.addEventListener('keydown', handleSearch, true);
